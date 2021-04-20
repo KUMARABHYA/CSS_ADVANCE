@@ -1,0 +1,45 @@
+body{
+    background: rgb(114, 139, 139);
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 300px;
+    
+}
+.box-one{
+    width: 100px;
+    height: 100px;
+    background: rgb(238, 137, 137);
+    margin-left: 300px;
+}
+.box-two{
+    width: 100px;
+    height: 100px;
+    background: rgb(233, 101, 101);
+   
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-name: moving;
+   
+    opacity: 0.6;
+
+}
+
+@keyframes moving{
+    0%{
+        right: 0px;
+        top: 0px;
+    }
+    50%{
+        right: 1000px;
+        top: 0px;
+    }
+    100%{
+        right: 0px;
+        top: 0px;
+    }
+}
+

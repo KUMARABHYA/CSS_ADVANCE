@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(103, 83, 121);
+}
+
+.clock-area{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+
+.clock{
+    border: 2rem solid rgb(13, 221, 204);
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+    border-radius: 50%;
+    
+   
+    
+}
+.top{
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    border: 1rem solid rgb(13, 221, 204);
+    border-radius: 50%;
+    transform: translateY(-130%) translateX(200%);
+    
+
+    
+
+}
+.line{
+    height: 1.2rem;
+    width: 1.2rem;
+    background: rgb(13, 221, 204);
+    position: relative;
+  margin-left: 150px;
+  margin-top: 150px;
+  border-radius: 10px;
+  animation: rot 4s linear infinite;
+
+  
+  
+ 
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.line:hover{
+    animation-play-state: paused;
+}
+
+.line:before{
+    content: '';
+    height: 90px;
+    width: 10px;
+    background: rgb(13, 221, 204);
+    position: absolute;
+    border-radius: 5px;
+    margin-left: 4px;
+   transform: translateY(-90%);
+  
+}
